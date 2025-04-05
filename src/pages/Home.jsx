@@ -3,7 +3,7 @@ import { watchImage } from '../assets'
 
 const Home = () => {
   return (
-    <section className="bg-gray-100 min-h-screen flex items-center justify-center px-6 py-12">
+    <section className="bg-gray-100 h-[100vh] flex items-center justify-center px-6 py-12">
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* Left Content */}
