@@ -24,6 +24,7 @@ export default function LoginPage() {
   };
 
   return (
+    
     <div className="flex justify-center items-center h-[87vh] bg-gray-100">
       <img src="" className="hidden sm:block" />
       <form
