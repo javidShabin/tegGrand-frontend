@@ -1,7 +1,7 @@
 import React from 'react'
 import { RouterProvider } from 'react-router-dom'
-import { router } from '../routers/routes'
 import { Toaster } from 'react-hot-toast'
+import { router } from './routers/routes'
 
 const App = () => {
   return (
