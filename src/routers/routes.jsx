@@ -6,6 +6,7 @@ import LoginPage from "../pages/loginPage";
 import Products from "../pages/Products";
 import ProductDetails from "../pages/ProductDetails";
 import ProductCreatePage from "../pages/Product_creation";
+import Product_edite from "../pages/product_edite";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
       {
         path: "/create_products",
         element: <ProductCreatePage />
+      },
+      {
+        path: "/product_edit/:id",
+        element: <Product_edite />
       }
     ],
   },

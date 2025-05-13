@@ -55,10 +55,11 @@ const ProductDetails = () => {
   return (
     <div className="max-w-5xl mx-auto px-6 py-20">
       <div className="relative bg-white rounded-xl shadow-lg overflow-hidden grid md:grid-cols-2 gap-10">
-
         {/* Edit Button */}
         <button
-          onClick={handleEdit}
+          onClick={() => {
+            navigate(`/product_edit/${id}`);
+          }}
           className="absolute top-4 right-4 bg-indigo-600 text-white px-3 py-1.5 rounded-md flex items-center gap-2 hover:bg-indigo-700 transition text-sm"
         >
           Edit
@@ -83,14 +84,18 @@ const ProductDetails = () => {
 
         {/* Product Details */}
         <div className="p-6 space-y-5 flex flex-col justify-center">
-          <h1 className="text-4xl font-bold text-gray-800">{productDetails.name}</h1>
+          <h1 className="text-4xl font-bold text-gray-800">
+            {productDetails.name}
+          </h1>
 
-          <p className="text-gray-600 leading-relaxed">{productDetails.description}</p>
+          <p className="text-gray-600 leading-relaxed">
+            {productDetails.description}
+          </p>
 
           <div className="text-gray-500 text-sm">
             Category:
             <span className="ml-2 text-indigo-600 font-semibold">
-              {productDetails.category || 'Uncategorized'}
+              {productDetails.category || "Uncategorized"}
             </span>
           </div>
 
