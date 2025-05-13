@@ -14,7 +14,6 @@ const Product_edite = () => {
     formState: { errors },
   } = useForm();
 
-  // Fetch product by ID and prefill form
   useEffect(() => {
     const fetchProduct = async () => {
       try {
@@ -34,7 +33,6 @@ const Product_edite = () => {
     fetchProduct();
   }, [id, setValue]);
 
-  // Submit handler
   const onSubmit = async (data) => {
     try {
       const formData = new FormData();

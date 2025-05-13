@@ -4,7 +4,7 @@ import { axiosInstants } from "../config/axiosInstants";
 
 const ProductDetails = () => {
   const { id } = useParams();
-  const navigate = useNavigate(); // For navigation after delete
+  const navigate = useNavigate();
 
   const [productDetails, setProductDetails] = useState(null);
 
@@ -18,10 +18,6 @@ const ProductDetails = () => {
     } catch (error) {
       console.error("Error fetching product details:", error);
     }
-  };
-
-  const handleEdit = () => {
-    console.log("Edit clicked");
   };
 
   const handleDelete = async () => {

@@ -31,7 +31,6 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Mobile Menu Icon (for responsiveness - optional) */}
         <div className="md:hidden">
           <button>
             <svg

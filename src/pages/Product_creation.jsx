@@ -17,7 +17,7 @@ export default function ProductCreatePage() {
       formData.append("price", data.price);
       formData.append("description", data.description);
       formData.append("category", data.category);
-      formData.append("image", data.image[0]); // image is an array
+      formData.append("image", data.image[0]);
 
       await axiosInstants.post("/product/create_product", formData, {
         headers: {
