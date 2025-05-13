@@ -1,6 +1,5 @@
 import React from "react";
 import { watchImage } from "../assets";
-import Products from "./Products";
 
 const Home = () => {
   return (
@@ -36,7 +35,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Products />
     </>
   );
 };
