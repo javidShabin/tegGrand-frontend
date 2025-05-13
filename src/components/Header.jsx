@@ -6,7 +6,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-900 tracking-tight">
-          Timely<span className="text-indigo-600">Watch</span>
+          Timely<span className="text-black">Watch</span>
         </div>
 
         {/* Navigation */}
@@ -19,10 +19,10 @@ const Header = () => {
 
         {/* Buttons / CTA */}
         <div className="hidden md:flex gap-4">
-          <button className="px-4 py-2 border border-indigo-600 text-indigo-600 rounded hover:bg-indigo-600 hover:text-white transition">
+          <button className="px-4 py-2 border border-black text-black rounded-md hover:bg-indigo-600 hover:text-white transition">
             Login
           </button>
-          <button className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">
+          <button className="px-4 py-2 bg-black text-white rounded-md hover:bg-indigo-700 transition">
             Sign Up
           </button>
         </div>
